@@ -1,21 +1,20 @@
-CyanogenMod 13.0 device configuration for LG L80
+LineageOS 14.1 device configuration for LG L80
 
 Set working directory:
 -------------
 
-    mkdir ~/cm13.0 && cd ~/cm13.0
+    mkdir ~/LA14.1 && cd ~/LA14.1
 
 How to build:
 -------------
 
 Initialize repo:
 
-    repo init -u git://github.com/CyanogenMod/android.git -b cm-13.0
+    repo init -u git://github.com/LineageOS/android.git -b cm-14.1
 
-    curl --create-dirs -L -o .repo/local_manifests/local_manifest.xml -O -L https://raw.githubusercontent.com/D380/android_local_manifest/cm-13.0/local_manifest.xml
     repo sync
 
 Compile:
 
-    . build/envsetup.sh
-    brunch cm_w6ds-userdebug
+. build/envsetup.sh
+brunch lineage_w6ds-userdebug
